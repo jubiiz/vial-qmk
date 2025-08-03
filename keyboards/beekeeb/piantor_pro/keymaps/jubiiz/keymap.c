@@ -67,13 +67,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    [4] = LAYOUT_split_3x6_3(  // numpad
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        TG(4), KC_SLASH,   KC_7,    KC_8,    KC_9, KC_MINUS,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        TG(4), KC_SLASH,   KC_7,    KC_8,    KC_9, KC_MINUS,                     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    XXXXXXX,KC_KP_ASTERISK,KC_4,    KC_5,    KC_6, KC_PLUS,                      XXXXXXX,   TG(4), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       KC_SPC,KC_KP_ASTERISK,KC_4,    KC_5,    KC_6, KC_PLUS,                      XXXXXXX,   TG(4), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX,    KC_1,    KC_2,    KC_3,    KC_0,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_ENT, KC_COMMA,    KC_1,    KC_2,    KC_3,    KC_0,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_ENT,  KC_COMMA,  KC_DOT,     KC_ENT, _______, KC_RALT
+                                          KC_BSPC,  KC_0,  KC_DOT,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   )
 };
