@@ -6,3 +6,8 @@
 
 /* default layer count */
 #define DYNAMIC_KEYMAP_LAYER_COUNT 10
+
+#define TAPPING_TERM 400
+#define PERMISSIVE_HOLD
+#define QUICK_TAP_TERM 0
+

@@ -3,12 +3,25 @@
 
 #include QMK_KEYBOARD_H
 
+// Left-hand home row mods
+#define GUI_A LGUI_T(KC_A)
+#define ALT_O LALT_T(KC_O)
+#define SFT_E LSFT_T(KC_E)
+#define CTL_U LCTL_T(KC_U)
+
+// Right-hand home row mods
+#define CTL_H RCTL_T(KC_H)
+#define SHFT_T RSFT_T(KC_T)
+#define ALT_N LALT_T(KC_N)
+#define GUI_S RGUI_T(KC_S)
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB, KC_SCLN,KC_COMMA,  KC_DOT,    KC_P,    KC_Y,                         KC_F,    KC_G,    KC_C,    KC_R,   KC_L,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    KC_LCTL,LGUI_T(KC_A),LALT_T(KC_O),LSFT_T(KC_E),LCTL_T(KC_U),KC_I,            KC_D,RCTL_T(KC_H),RSFT_T(KC_T),LALT_T(KC_N),RGUI_T(KC_S),KC_QUOT,
+      KC_LCTL,   GUI_A,   ALT_O,   SFT_E,   CTL_U,    KC_I,                         KC_D,   CTL_H,  SHFT_T,   ALT_N,  GUI_S,  KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_QUOT, KC_Q,    KC_J,    KC_K,    KC_X,                         KC_B,    KC_M,    KC_W,    KC_V,   KC_Z,  KC_ESC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
