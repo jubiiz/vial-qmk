@@ -1,3 +1,5 @@
 VIA_ENABLE  = yes
 VIAL_ENABLE = yes
 VIAL_TAP_HOLD_CONFIG = yes
+
+TAP_DANCE_ENABLE = yes
